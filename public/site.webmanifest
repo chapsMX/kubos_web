@@ -1,0 +1,13 @@
+{
+  "name": "Kubos",
+  "short_name": "Kubos",
+  "description": "Copropiedad inmobiliaria en México a través de fideicomisos bancarios.",
+  "icons": [
+    { "src": "/android-chrome-192x192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/android-chrome-512x512.png", "sizes": "512x512", "type": "image/png" }
+  ],
+  "theme_color": "#1C3D82",
+  "background_color": "#FFFFFC",
+  "display": "standalone",
+  "start_url": "/"
+}
