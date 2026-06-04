@@ -10,12 +10,18 @@ const destinos = [
   'Otro destino',
 ]
 
+const productos = [
+  'Friends & Family',
+  'Patrimonial',
+  'Inventario',
+]
+
 interface Props {
   onSuccess?: () => void
 }
 
 export default function ContactForm({ onSuccess }: Props) {
-  const [form, setForm] = useState({ nombre: '', correo: '', destino: '', comentarios: '' })
+  const [form, setForm] = useState({ nombre: '', correo: '', destino: '', producto: '', comentarios: '' })
   const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle')
 
   function handleChange(e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) {
@@ -92,6 +98,19 @@ export default function ContactForm({ onSuccess }: Props) {
         >
           <option value="">Selecciona un destino</option>
           {destinos.map((d) => <option key={d} value={d}>{d}</option>)}
+        </select>
+      </div>
+
+      <div className="flex flex-col gap-1.5">
+        <label className="text-[11px] font-medium tracking-wide uppercase text-navy-dark/50">Producto de interés</label>
+        <select
+          name="producto"
+          value={form.producto}
+          onChange={handleChange}
+          className="w-full border border-navy-dark/15 rounded-lg px-4 py-2.5 text-sm text-navy-dark focus:outline-none focus:border-navy-light bg-transparent"
+        >
+          <option value="">Selecciona un producto</option>
+          {productos.map((p) => <option key={p} value={p}>{p}</option>)}
         </select>
       </div>
 

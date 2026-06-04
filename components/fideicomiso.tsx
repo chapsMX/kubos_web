@@ -73,7 +73,7 @@ export default function Fideicomiso() {
             <div
               key={card.title}
               className={[
-                'group flex flex-col gap-5 p-8 bg-crema transition-all duration-200 hover:bg-blanco hover:shadow-lg cursor-default',
+                'flex flex-col gap-5 p-8 bg-crema cursor-default',
                 i % 2 === 0 ? 'sm:border-r border-[rgba(6,12,32,0.08)]' : '',
                 i < 2 ? 'sm:border-b border-[rgba(6,12,32,0.08)]' : '',
               ].join(' ')}

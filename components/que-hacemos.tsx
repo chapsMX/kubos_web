@@ -2,7 +2,7 @@
 
 const servicios = [
   {
-    label: 'Copropiedad · Familiar',
+    label: 'Copropiedad · Familia y Amigos',
     title: 'Amigos y familia',
     body: '¿Ya encontraron la propiedad? No importa si es en la playa, en la ciudad o en cualquier destino — estructuramos el fideicomiso para que la compartan sin conflictos. Definimos los derechos de uso de cada socio, las reglas de administración y el mecanismo para tomar decisiones colectivas. La propiedad que quieren, con la estructura legal que necesitan.',
     icon: (
@@ -15,7 +15,7 @@ const servicios = [
     ),
   },
   {
-    label: 'Inversión · Renta vacacional',
+    label: 'Inversión Patrimonial ',
     title: 'Propiedades gestionadas',
     body: 'Identificamos propiedades en destinos de alta demanda, las fraccionamos y abrimos la participación a inversionistas. Nuestro equipo gestiona la operación, el mantenimiento y la renta vacacional — tú recibes rendimientos periódicos sin ocuparte de nada. Una inversión patrimonial con flujo de caja desde el primer año.',
     icon: (
@@ -26,7 +26,7 @@ const servicios = [
     ),
   },
   {
-    label: 'B2B · Desarrolladores',
+    label: 'Desarrolladores · Veta de inventario',
     title: 'Inventario y desarrolladores',
     body: 'Nos asociamos con desarrolladores para estructurar y comercializar unidades bajo esquema de copropiedad. Diseñamos el modelo fraccionado, proveemos el marco legal y ejecutamos la estrategia de ventas — acelerando los ciclos de comercialización y ampliando la base de compradores potenciales.',
     icon: (
@@ -67,7 +67,7 @@ export default function QueHacemos() {
             <div
               key={s.title}
               className={[
-                'group flex flex-col gap-5 p-8 bg-crema transition-all duration-200 hover:bg-blanco hover:shadow-lg cursor-default',
+                'flex flex-col gap-5 p-8 bg-crema cursor-default',
                 i < 2 ? 'md:border-r border-[rgba(6,12,32,0.08)]' : '',
               ].join(' ')}
             >
