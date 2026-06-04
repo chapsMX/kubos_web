@@ -33,7 +33,7 @@ export default function Destinos() {
             <div
               key={d.ciudad}
               className={[
-                'group flex flex-col gap-3 p-8 bg-crema transition-all duration-200 hover:bg-blanco hover:shadow-lg cursor-default',
+                'flex flex-col gap-3 p-8 bg-crema cursor-default',
                 i < 3 ? 'md:border-r border-[rgba(6,12,32,0.08)]' : '',
                 i < 2 ? 'border-b md:border-b-0 border-[rgba(6,12,32,0.08)]' : '',
               ].join(' ')}
